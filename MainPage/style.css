@@ -1,0 +1,119 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('/images/background-image3.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+p {
+  font-family: 'Poppins', sans-serif;  
+  font-weight: 500;  
+  max-width: 600px;  
+  margin: 0 auto;  
+  text-align: center;  
+  font-size: 1.2em;  
+  line-height: 1.6;  
+}
+
+
+nav {
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  list-style: none;
+  margin: 0;  
+  padding: 0;
+  background: rgba(255, 0, 76, 0.432);  
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 15px 0;
+}
+
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.banner {
+  padding: 40px 20px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  background-color: #5617175a;
+  width: 600px;
+  
+  /* Центрування */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+   /* Додаткове вирівнювання */
+   margin: 0 auto;
+   border-radius: 10px;
+}
+
+.banner h1 {
+  font-size: 3em;
+}
+
+button {
+  background: #ff0000;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #cc0000;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+footer {
+  background: #222;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;  
+}
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 2em;
+  }
+  .banner p {
+    font-size: 1em;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.banner h1, .banner p {
+  animation: fadeIn 1.5s ease-in-out;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - History of Circus</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Контейнер для хедера -->
+  <header id="header-container"></header>
+
+  <section class="history">
+    <div class="container">
+      <h1>The History of Circus</h1>
+      <p>
+        The circus has a rich and fascinating history that dates back thousands of years. The origins of the modern circus can be traced to ancient Rome, where elaborate chariot races, gladiator battles, and animal performances took place in vast arenas such as the Colosseum. However, the true evolution of what we now recognize as the circus began in the 18th century.
+      </p>
+      <p>
+        In 1768, an Englishman named Philip Astley opened the first modern circus in London. Astley was a skilled horse rider who performed trick riding and later added acrobats, jugglers, and clowns to his performances. His innovative approach led to the development of the circular ring, which remains a staple of circus performances today.
+      </p>
+      <p>
+        The 19th century saw the rise of traveling circuses, with pioneers like P.T. Barnum and the Ringling Brothers bringing extravagant shows to audiences across the world. These traveling circuses introduced the big top tent, allowing performances to be held in various locations. The circus became a symbol of wonder and excitement, featuring daring tightrope walkers, fierce lion tamers, and astonishing illusions.
+      </p>
+      <p>
+        Today, the circus continues to evolve, blending traditional acts with modern innovations. Contemporary circuses, such as Cirque du Soleil, focus on artistic storytelling, breathtaking acrobatics, and theatrical performances, proving that the magic of the circus is timeless.
+      </p>
+    </div>
+  </section>
+
+  <section class="performers">
+    <div class="container">
+      <h2>Meet the Stars of the Circus</h2>
+      <div class="card-container">
+        
+        <div class="card">
+          <img src="images/juggler.jpg" alt="Juggler">
+          <h3>Jugglers</h3>
+          <p>Masters of balance and precision, jugglers amaze audiences with their incredible coordination and speed.</p>
+        </div>
+
+        <div class="card">
+          <img src="images/acrobat.jpg" alt="Acrobat">
+          <h3>Acrobats</h3>
+          <p>These fearless performers defy gravity with breathtaking flips, jumps, and aerial stunts.</p>
+        </div>
+
+        <div class="card">
+          <img src="images/magician.jpg" alt="Magician">
+          <h3>Magicians</h3>
+          <p>Illusionists who leave the audience in awe with their mind-bending tricks and sleight of hand.</p>
+        </div>
+
+        <div class="card">
+          <img src="images/lion-tamer.jpg" alt="Lion Tamer">
+          <h3>Animal Trainers</h3>
+          <p>From majestic lions to talented elephants, trainers work with incredible animals to create unforgettable performances.</p>
+        </div>
+
+        <div class="card">
+          <img src="images/clown.jpg" alt="Clown">
+          <h3>Clowns</h3>
+          <p>Bringing laughter and joy, clowns use humor, slapstick comedy, and playful antics to entertain audiences of all ages.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Контейнер для футера -->
+  <footer id="footer-container"></footer>
+
+  <script>
+    // Завантаження хедера
+    fetch('/header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header-container').innerHTML = data)
+      .catch(error => console.error('Error loading header.html:', error));
+
+    // Завантаження футера
+    fetch('/footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer-container').innerHTML = data)
+      .catch(error => console.error('Error loading footer.html:', error));
+  </script>
+
+</body>
+</html>

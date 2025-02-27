@@ -1,0 +1,36 @@
+
+nav {
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  list-style: none;
+  margin: 0;  
+  padding: 0;
+  background: rgba(255, 0, 76, 0.432);  
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 15px 0;
+}
+
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+footer {
+  background: #222;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;  
+}

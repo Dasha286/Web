@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circus Magic</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header-container"></header>
+
+  <section id="home">
+    <div class="banner">
+      <h1>WELCOME CIRCUS</h1>
+      <p>Step into a world of wonder, where dreams take flight and the impossible becomes reality! 
+         At Circus Magic, we bring you breathtaking acrobatics, mesmerizing illusions, and heart-pounding performances that will leave you in awe.</p>
+      <p>Feel the excitement in the air as our fearless performers defy gravity, our talented clowns spread joy, and our dazzling shows transport you to a realm of fantasy and adventure.</p>
+      <p>Join us for an unforgettable journey under the big top – where every moment is filled with thrills, laughter, and pure magic!</p>
+      <p>Get ready for the show of a lifetime! 🎭✨</p>
+    </div>
+  </section>
+
+  <!-- Контейнер для футера -->
+  <footer id="footer-container"></footer>
+
+  <script>
+    // Завантаження хедера
+    fetch('/header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header-container').innerHTML = data)
+      .catch(error => console.error('Помилка завантаження header.html:', error));
+
+    // Завантаження футера
+    fetch('/footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer-container').innerHTML = data)
+      .catch(error => console.error('Помилка завантаження footer.html:', error));
+  </script>
+
+</body>
+</html>
