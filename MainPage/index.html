@@ -21,17 +21,17 @@
     </div>
   </section>
 
-  <!-- Контейнер для футера -->
+  
   <footer id="footer-container"></footer>
 
   <script>
-    // Завантаження хедера
+ 
     fetch('/header.html')
       .then(response => response.text())
       .then(data => document.getElementById('header-container').innerHTML = data)
       .catch(error => console.error('Помилка завантаження header.html:', error));
 
-    // Завантаження футера
+  
     fetch('/footer.html')
       .then(response => response.text())
       .then(data => document.getElementById('footer-container').innerHTML = data)

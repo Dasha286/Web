@@ -10,18 +10,52 @@ body {
   width: 80%;
   margin: auto;
   padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.history {
+  background: #f9f9f9;
+  padding: 50px 0;
+}
+
+.history h1 {
+  text-align: center;
+  color: #d42f2f;
+  margin-bottom: 20px;
+}
+
+.history p {
+  text-align: justify;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.history-img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 
 h1, h2 {
   text-align: center;
   color: #d42f2f;
 }
 
-.history p {
-  text-align: justify;
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
+ 
 
 .performers {
   background-color: #fff;
@@ -42,6 +76,12 @@ h1, h2 {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
@@ -54,11 +94,17 @@ h1, h2 {
 .card h3 {
   margin: 10px 0;
   color: #d42f2f;
+  transition: color 0.3s ease;
+}
+
+.card h3:hover {
+  color: gray;
 }
 
 .card p {
   font-size: 14px;
 }
+
 
 
 
@@ -96,4 +142,36 @@ footer {
   padding: 10px;
   text-align: center;
   margin-top: auto;  
+}
+
+p {
+  font-size: 24px;  
+  font-style: italic;  
+}
+
+
+.feedback {
+  text-align: center;
+  padding: 20px;
+  background: #f8f8f8;
+  margin-top: 20px;
+}
+
+.feedback form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.feedback button {
+  background: #ff4500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.feedback button:hover {
+  background: #e03e00;
 }

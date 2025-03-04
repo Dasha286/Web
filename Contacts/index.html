@@ -3,14 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Contacts</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
  
   <header id="header-container"></header>
 
+  <section class="contact-info">
+    <h2>Як з нами зв'язатися?</h2>
+    <p><strong>Адреса:</strong> Київський Цирк, Площа Перемоги, Київ, Україна</p>
+    <p><strong>Телефон:</strong> +38 (044) 123-45-67</p>
+    <p><strong>Email:</strong> <a href="mailto:info@kyivcircus.com">info@kyivcircus.com</a></p>
+    <p><strong>Години роботи:</strong> Пн-Нд: 10:00 - 20:00</p>
+</section>
+ 
 
+<section class="contact-form">
+    <h2>Зворотний зв'язок</h2>
+    <form>
+        <label for="name">Ваше ім'я:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Ваш email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Ваше повідомлення:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Надіслати</button>
+    </form>
+</section>
+
+<section class="social-media">
+    <h2>Слідкуйте за нами</h2>
+    <ul class="social-links">
+        <li><a href="https://www.instagram.com/kyivcircus/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/circuskyiv/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+    </ul>
+</section>
 
   <footer id="footer-container"></footer>
   <script>

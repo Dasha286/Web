@@ -58,13 +58,11 @@ nav ul li a {
   background-color: #5617175a;
   width: 600px;
   
-  /* Центрування */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-   /* Додаткове вирівнювання */
    margin: 0 auto;
    border-radius: 10px;
 }
