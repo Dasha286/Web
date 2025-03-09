@@ -203,10 +203,22 @@
     }
     fetch('/header.html')
       .then(response => response.text())
-      .then(data => document.getElementById('header-container').innerHTML = data)
-      .catch(error => console.error('Помилка завантаження header.html:', error));
-
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+        
+        
+        const menuToggle = document.getElementById("mobile-menu");
+        const navList = document.getElementById("nav-list");
   
+        if (menuToggle && navList) {
+          menuToggle.addEventListener("click", function () {
+            navList.classList.toggle("active");
+          });
+        }
+      })
+      .catch(error => console.error('Помилка завантаження header.html:', error));
+  
+   
     fetch('/footer.html')
       .then(response => response.text())
       .then(data => document.getElementById('footer-container').innerHTML = data)

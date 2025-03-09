@@ -121,9 +121,20 @@ a:hover {
 }
 .video-wrapper {
   position: relative;
-  width: 750px;
-  height: 350px;
+  width: 100%; 
+  max-width: 750px; 
+  height: 0;
+  padding-bottom: 56.25%;  
+  margin: 0 auto; 
 }
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%; 
+  height: 100%;  
+  border: none;
+}
+
 .video-wrapper img {
   position: absolute;
   width: 100%;
@@ -185,4 +196,97 @@ th {
 body p {
   font-size: 24px;
   font-style: italic;
+}
+
+@media (max-width: 768px) {
+ 
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}  
+
+ 
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;  
+  }
+  nav ul {
+    display: none;  
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: rgb(214, 106, 106);
+    width: 40%;
+    text-align: center;
+    padding: 10px 0;
+  }
+  nav ul.active {
+    display: flex; 
+  }
+  nav ul li {
+    padding: 10px 0;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  th, td {
+    padding: 8px;
+    word-wrap: break-word;
+  }
+
+  th {
+    font-size: 1.2em;
+  }
+
+  td {
+    font-size: 1em;
+  }
+  tr {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  td {
+    display: block;
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+  }
+
+  td:nth-of-type(1)::before { content: "Дата"; }
+  td:nth-of-type(2)::before { content: "Подія"; }
+  td:nth-of-type(3)::before { content: "Місце"; }
+  td:nth-of-type(4)::before { content: "Ціна квитка"; }
+  td:nth-of-type(5)::before { content: "Деталі"; }
 }

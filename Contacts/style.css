@@ -39,7 +39,44 @@ nav ul li a {
   font-size: 1.2em;
   font-weight: bold;
 }
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: column; /* За замовчуванням у два рядки */
+  gap: 10px;
  
+}
+
+.input-row div {
+  width: 99%;
+}
+
+.input-row input {
+  width: 100%;
+  padding: 20px;
+   
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Адаптація: на малих екранах робимо один рядок */
+@media (max-width: 768px) {
+  .input-row {
+    flex-direction: row; /* Змінюємо на один рядок */
+    gap: 10px;
+  }
+
+  .input-row div {
+    flex: 1;
+  }
+}
+ 
+
 .contact-info, .map, .contact-form, .social-media {
   width: 80%;
   margin: 20px auto;
@@ -51,7 +88,7 @@ nav ul li a {
 
  
 .contact-form input, .contact-form textarea {
-  width: 100%;
+  width: 94%;
   padding: 10px;
   margin: 5px 0;
   border: 1px solid #ccc;
@@ -74,7 +111,7 @@ nav ul li a {
 .social-links {
   display: flex;
   gap: 15px;
-  justify-content: center;
+  justify-content: left;
 }
 
 .social-links a {
@@ -101,31 +138,47 @@ footer {
     width: 90%;
   }
 }
+ 
+/* Стилі для бургер-меню */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+}
 
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Стилі для мобільного меню */
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;  
+  }
   nav ul {
+    display: none;  
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: rgb(214, 106, 106);
+    width: 40%;
+    text-align: center;
     padding: 10px 0;
   }
-
-  nav ul li a {
-    font-size: 1em;
+  nav ul.active {
+    display: flex; 
   }
-
-  .contact-info, .map, .contact-form, .social-media {
-    width: 95%;
-    padding: 10px;
-  }
-
-  .social-links {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .social-links a {
-    font-size: 1.8em;
+  nav ul li {
+    padding: 10px 0;
   }
 }
 

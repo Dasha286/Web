@@ -70,10 +70,10 @@ nav ul li a {
 /* Стилі для мобільного меню */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: flex; /* Показати бургер */
+    display: flex;  
   }
   nav ul {
-    display: none; /* Спочатку приховане */
+    display: none;  
     flex-direction: column;
     position: absolute;
     top: 50px;
@@ -84,7 +84,7 @@ nav ul li a {
     padding: 10px 0;
   }
   nav ul.active {
-    display: flex; /* Показати меню при відкритті */
+    display: flex; 
   }
   nav ul li {
     padding: 10px 0;
