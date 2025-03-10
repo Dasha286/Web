@@ -45,10 +45,10 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Чорно-білий ефект при наведенні */
+ 
 .history-img:hover {
   filter: grayscale(100%);
-  transform: scale(1.05); /* Додає невелике збільшення при наведенні */
+  transform: scale(1.05); 
 }
 
 .history-img:hover {
@@ -111,7 +111,7 @@ h1, h2 {
 .card p {
   font-size: 14px;
 }
-/* Стиль для 4-ї картки */
+ 
 .card:nth-child(4) {
   position: relative;
 }
@@ -120,9 +120,9 @@ h1, h2 {
   transition: opacity 0.3s ease;
 }
 
-/* Стиль для заміни зображення на картці при наведенні на саме фото */
+ 
 .card:nth-child(4):hover img {
-  opacity: 0;  /* Змінює прозорість оригінального зображення */
+  opacity: 0;   
 }
 
 .card:nth-child(4):hover::after {
@@ -132,7 +132,7 @@ h1, h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/images/Гуменна2.jpg'); /* Ваше нове зображення */
+  background-image: url('/images/Гуменна2.jpg'); 
   background-size: cover;
   background-position: center;
   opacity: 1;
@@ -221,7 +221,7 @@ p {
   }
 }  
 
-/* Стилі для бургер-меню */
+ 
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -240,7 +240,7 @@ p {
   transition: 0.3s;
 }
 
-/* Стилі для мобільного меню */
+ 
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;  

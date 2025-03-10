@@ -1,5 +1,4 @@
 
-/* Навігація */
 nav {
   margin: 0;
   padding: 0;
@@ -25,7 +24,6 @@ nav ul li a {
 }
 
  
-/* Стилі для бургер-меню */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -44,7 +42,6 @@ nav ul li a {
   transition: 0.3s;
 }
 
-/* Стилі для мобільного меню */
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;  

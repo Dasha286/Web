@@ -47,7 +47,7 @@ nav ul li a {
 
 .input-row {
   display: flex;
-  flex-direction: column; /* За замовчуванням у два рядки */
+  flex-direction: column;  
   gap: 10px;
  
 }
@@ -64,10 +64,10 @@ nav ul li a {
   border-radius: 5px;
 }
 
-/* Адаптація: на малих екранах робимо один рядок */
+ 
 @media (max-width: 768px) {
   .input-row {
-    flex-direction: row; /* Змінюємо на один рядок */
+    flex-direction: row;  
     gap: 10px;
   }
 
@@ -139,7 +139,6 @@ footer {
   }
 }
  
-/* Стилі для бургер-меню */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -153,7 +152,7 @@ footer {
 .bar {
   width: 30px;
   height: 4px;
-  background-color: white;
+  background-color: rgb(177, 175, 175);
   margin: 5px 0;
   transition: 0.3s;
 }
