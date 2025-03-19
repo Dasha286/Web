@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circus Magic</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <header>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+       
+      </div>
+      <nav>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="/pages/mainPage.html">Home</a></li>
+          <li><a href="/pages/about.html">About Us</a></li>
+          <li><a href="/pages/programs.html">Shows</a></li>
+          <li><a href="/pages/portfolio.html">Gallery</a></li>
+          <li><a href="/pages/contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content">
+      <section id="home">
+        <div class="banner">
+          <h1 class="w">Ласкаво просимо до Цирку</h1>
+          <p>Пориньте у світ чудес, де мрії набувають крила, а неможливе стає реальністю! 
+             У Circus Magic ми даруємо вам захоплюючу акробатику, заворожуючі ілюзії та виступи, які залишать вас у захваті.</p>
+          <p>Відчуйте хвилювання в повітрі, коли наші безстрашні артисти кидають виклик гравітації, наші талановиті клоуни дарують радість, а яскраві шоу переносять вас у світ фантазій і пригод.</p>
+          <p>Приєднуйтесь до нас на незабутню подорож під великою ареною – де кожна мить наповнена хвилюванням, сміхом і чистою магією!</p>
+          <p>Готуйтеся до шоу вашого життя! 🎭✨</p>
+      </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Circus Magic. All rights reserved.</p>
+    </footer>
+    
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const menuToggle = document.getElementById("mobile-menu");
+      const navList = document.getElementById("nav-list");
+  
+      menuToggle.addEventListener("click", function() {
+        navList.classList.toggle("active"); 
+      });
+    });
+  </script>
+  
+</body>
+
+</html>

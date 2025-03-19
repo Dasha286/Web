@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <nav>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="/pages/mainPage.html">Home</a></li>
+        <li><a href="/pages/about.html">About Us</a></li>
+        <li><a href="/pages/programs.html">Shows</a></li>
+        <li><a href="/pages/portfolio.html">Gallery</a></li>
+        <li><a href="/pages/contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <section class="gallery">
+    <h2 class="pv">Photo & Video Gallery</h2>
+    <div class="gallery-grid">
+      <img src="/images/video-1.png" alt="Photo 1">
+      <img src="/images/background-image.jpg" alt="Photo 2">
+      <img src="/images/photo_10_2025-03-02_14-59-12.jpg" alt="Photo 3">
+      <img src="/images/photo_11_2025-03-02_14-59-12.jpg" alt="Photo 4">
+      <img src="/images/photo_12_2025-03-02_14-59-12.jpg" alt="Photo 5">
+      <img src="/images/photo_13_2025-03-02_14-59-12.jpg" alt="Photo 6">
+      <img src="/images/photo_14_2025-03-02_14-59-12.jpg" alt="Photo 7">
+      <img src="/images/photo_15_2025-03-02_14-59-12.jpg" alt="Photo 8">
+      <img src="/images/photo_16_2025-03-02_14-59-12.jpg" alt="Photo 9">
+      <img src="/images/photo_17_2025-03-02_14-59-12.jpg" alt="Photo 10">
+      <img src="/images/photo_18_2025-03-02_14-59-12.jpg" alt="Photo 11">
+      <img src="/images/photo_1_2025-03-02_14-59-12.jpg" alt="Photo 12">
+      <img src="/images/photo_2_2025-03-02_14-59-12.jpg" alt="Photo 13">
+      <img src="/images/photo_3_2025-03-02_14-59-12.jpg" alt="Photo 14">
+      <img src="/images/photo_4_2025-03-02_14-59-12.jpg" alt="Photo 15">
+      <img src="/images/photo_5_2025-03-02_14-59-12.jpg" alt="Photo 16">
+      <img src="/images/photo_6_2025-03-02_14-59-12.jpg" alt="Photo 17">
+      <img src="/images/photo_7_2025-03-02_14-59-12.jpg" alt="Photo 18">
+      <img src="/images/photo_8_2025-03-02_14-59-12.jpg" alt="Photo 19">
+      <img src="/images/photo_9_2025-03-02_14-59-12.jpg" alt="Photo 20">
+      <img src="/images/photo_1_2025-03-02_15-10-35.jpg" alt="Photo 21">
+      <img src="/images/photo_2_2025-03-02_15-10-35.jpg" alt="Photo 22">
+      <img src="/images/photo_3_2025-03-02_15-10-35.jpg" alt="Photo 23">
+      <img src="/images/photo_4_2025-03-02_15-10-35.jpg" alt="Photo 24">
+      <img src="/images/photo_5_2025-03-02_15-10-35.jpg" alt="Photo 25">
+      <img src="/images/photo_6_2025-03-02_15-10-35.jpg" alt="Photo 26">
+      <img src="/images/photo_7_2025-03-02_15-10-35.jpg" alt="Photo 27">
+      <img src="/images/photo_8_2025-03-02_15-10-35.jpg" alt="Photo 28">
+      <img src="/images/photo_2_2025-03-02_15-10-35.jpg" alt="Photo 29">
+      <img src="/images/photo_9_2025-03-02_14-59-12.jpg" alt="Photo 30">
+    </div>
+  </section>
+  
+  
+
+  <section class="behind-the-scenes">
+    <h2>Behind the Scenes</h2>
+    <p>Take a look at how our artists prepare for their performances, from costume fittings to intense rehearsals.</p>
+  </section>
+
+ 
+
+  <section class="social-media">
+    <h2>Social Media Highlights</h2>
+    <p>"Wow! The trapeze act was mind-blowing! #CircusMagic" - @CircusFan (Instagram)</p>
+    <p>"Loved the clown performance! So funny!" - @JohnDoe (Facebook)</p>
+    <p>Follow us on social media:</p>
+    <ul class="social-links">
+        <li><a href="https://www.instagram.com/kyivcircus/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/circuskyiv/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+    </ul>
+</section>
+
+
+
+  <section class="interactive">
+    <h2>Interactive Experience</h2>
+    <div id="video-container" style="position: relative; width: 560px; height: 315px; cursor: pointer;">
+      <img src="https://img.youtube.com/vi/qeX0t3K5gt0/hqdefault.jpg" alt="Відео" 
+           style="width: 100%; height: 100%;">
+  </div>
+  
+  <script>
+      document.getElementById('video-container').addEventListener('click', function () {
+          this.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/qeX0t3K5gt0?autoplay=1" frameborder="0" allowfullscreen></iframe>';
+      });
+  </script>
+  
+</section>
+
+ 
+<section class="reviews">
+  <h2>Visitor Reviews</h2>
+  <div class="comments">
+      <p><strong>Anna:</strong> "Absolutely mesmerizing! Can't wait for the next show!"</p>
+      <p><strong>Mike:</strong> "The best circus experience ever! A must-see!"</p>
+      <p><strong>Olga:</strong> "A magical performance! The acrobats were breathtaking!"</p>
+      <p><strong>David:</strong> "Fantastic show, great for the whole family. Highly recommended!"</p>
+      <p><strong>Emma:</strong> "Incredible atmosphere and stunning performances. Loved every moment!"</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Circus Magic. All rights reserved.</p>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.getElementById("mobile-menu");
+    const navList = document.getElementById("nav-list");
+
+    menuToggle.addEventListener("click", function() {
+      navList.classList.toggle("active"); 
+    });
+  });
+</script>
+</body>
+</html>
